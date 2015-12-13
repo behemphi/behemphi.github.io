@@ -1,0 +1,13 @@
+jekyll_runtime:
+  image: "jekyll/jekyll:pages"
+  environment:
+    - FORCE_POLLING=true
+    - JEKYLL_ENV=development
+    - VERBOSE=true
+  container_name: jekyll_runtime
+  tty: true
+  ports:
+    - "$JEKYLL_RUNTIME_IP:4000:80/tcp"
+  volumes:
+    - ".:/srv/jekyll"
+  command: jekyll build --watch
