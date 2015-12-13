@@ -1,10 +1,7 @@
 ---
 categories: 
-- Github Pages
-- Blogging
-- Docker
-- Markdown
-- Jekyll
+- github-pages
+- docker
 date:   2015-12-02 09:33:59 -0600
 layout: post
 tags: 
