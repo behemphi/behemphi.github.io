@@ -1,14 +1,14 @@
 ---
 categories: 
-- IBM
-- Power
-date:   2016-04-08
+- ibm
+- power
+date: 2016-04-11
 layout: post
 tags: 
 - blogging
 - IBM
 - Power
-title:  "Does IBM's OpenPower Initiative Matter to DevOps"
+title:  "Does IBM OpenPower Initiative Matter to DevOps"
 ---
 
 My friend, Lynn Bender, Godfather of GeekAustin, recently asked me if I thought
@@ -18,7 +18,7 @@ came up with these thoughs.
 The short answer is, "No, not directly, and only if the promise of OpenPower 
 is realized."
 
-## TL;DR
+## Reasoning from a DevOps Perspective
 
 IBM seems to be trying to figure out how to join the technology community 
 without owning it.  It's an ongoing process, and I hope they can figure it out.
