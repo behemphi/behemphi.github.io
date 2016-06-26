@@ -3,7 +3,7 @@ categories:
 - Vagrant
 - Chef
 - Development Environment
-date: 2016-06-30
+date: 2016-06-25
 layout: post
 tags: 
 - Vagrant
