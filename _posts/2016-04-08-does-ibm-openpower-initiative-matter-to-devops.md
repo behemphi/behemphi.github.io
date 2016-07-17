@@ -29,7 +29,7 @@ The [Power architecture](https://en.wikipedia.org/wiki/IBM_POWER_microprocessors
 
 My memory is also that the Power instruction set is significantly simpler than the bolted-on-then-bolted-on some more of `x86`. This means that the companies in the OpenPower consortium who care to could potentially leverage this for optimizations that are not possible by Intel.  
 
-As strange as it seems, the biggest factor cripppling Power all these years might be something as esoteric as the fact that it was orginially (big-endian)[https://en.wikipedia.org/wiki/Endianness]. Power chips are now capable of running Little Endian as well.  Why is such an obscure fact so import?  Linux is a little-endian operating system.  By supporting little-endian, Power systems can run the entire ecosystem of Linux applications.
+As strange as it seems, the biggest factor cripppling Power all these years might be something as esoteric as the fact that it was orginially [big-endian](https://en.wikipedia.org/wiki/Endianness). Power chips are now capable of running Little Endian as well.  Why is such an obscure fact so import?  Linux is a little-endian operating system.  By supporting little-endian, Power systems can run the entire ecosystem of Linux applications.
 
 ## About DevOps
 
