@@ -383,9 +383,12 @@ Let's create a simple "Hello World" application with Flask. First we need to lay
 
 `kumbaya/run.py`
 {% highlight python %}
-#!/usr/bin/python
+#!/usr/bin/env python
+
 from app import app
-app.run(host="0.0.0.0")
+if __name__ == '__main__':
+    app.run()
+
 {% endhighlight %}
 
 `kumbaya/app/__init__.py`
@@ -394,19 +397,22 @@ from flask import Flask
 
 app = Flask(__name__)
 from app import views
+
 {% endhighlight %}
 
-`kumbaya/views.py`
+`kumbaya/app/views.py`
 {% highlight python %}
 from app import app
+
 
 @app.route('/')
 @app.route('/index')
 def index():
     return "Hello, World!"
+
 {% endhighlight %}
 
-If you were running this on your workstation, you would have to visit the address `127.0.0.1:5000`, but note in the new line of the Vagrantfile below we have explicitly assigned an address to the guest of 10.42.42.1.
+If you were running this on your workstation, you would have to visit the address `127.0.0.1:5000`, but note in the new line of the Vagrantfile below we have explicitly assigned an address to the guest of `10.42.42.10`.
 
 
 
@@ -416,7 +422,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.network :private_network, ip: '10.42.42.1'
+  config.vm.network :private_network, ip: '10.42.42.10'
 
   config.vm.provision "shell", inline: <<-SHELL
     
@@ -444,5 +450,18 @@ Vagrant.configure("2") do |config|
 end
 {% endhighlight %}
 
+In order to see the results you should start up the app from the Vagrant box:
+```
+behemphi:~/behemphi/kumbaya 21:42:53 > vagrant ssh
+vagrant@vagrant-ubuntu-trusty-64:~$ export FLASK_APP=/vagrant/run.py
+vagrant@vagrant-ubuntu-trusty-64:~$ export FLASK_DEBUG=1
+vagrant@vagrant-ubuntu-trusty-64:~$ python -m flask run --host=0.0.0.0
+ * Serving Flask app "run"
+ * Forcing debug mode on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 311-149-961
+```
 
-
+Now, you can browse to http://10.42.42.10:5000/
