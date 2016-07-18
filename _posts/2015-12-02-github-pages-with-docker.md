@@ -147,9 +147,9 @@ docker run \
   --interactive \
   --label=jekyll \
   --publish 4000:4000 \
-  --rm \ 
+  --rm \
   --tty \
-  --volume=$(pwd):/srv/jekyll 
+  --volume=$(pwd):/srv/jekyll \
   jekyll/jekyll:pages jekyll new . --force
 {% endhighlight %}
 
