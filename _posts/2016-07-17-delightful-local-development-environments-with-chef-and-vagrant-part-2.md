@@ -22,12 +22,18 @@ This series of articles was written to support the development efforts of [Kasas
 
 # Table of Contents
 
-*  Part 1: [Hello Vagrant!](/vagrant/chef/development%20environment/2016/06/25/delightful-local-development-environments-with-chef-and-vagrant-part-1.html) 
-* **Part 2: [Provisioner Basics](/vagrant/chef/development%20environment/2016/07/17/delightful-local-development-environments-with-chef-and-vagrant-part-2.html)**
+1. [Hello Vagrant!](/vagrant/chef/development%20environment/2016/06/25/delightful-local-development-environments-with-chef-and-vagrant-part-1.html) 
+1. **Part 2: [Provisioner Basics](/vagrant/chef/development%20environment/2016/07/17/delightful-local-development-environments-with-chef-and-vagrant-part-2.html)**
+1. [The Chef Provisioner]()
+1. [Launching EC2 Instances with Knife]()
+1. [Using Community Cookbooks]() 
+1. [Testing Infrastrucutre with Test Kitchen]()
+1. [Team Coding with Chef]()
+1. [Multiple Guests with Vagrant]()
 
 # Goals for this Article
 
-At the end of this article you should have acomplished the followign tasks: 
+At the end of this article you should have acomplished the following tasks: 
 
 * Demonstrate the disposability of this environment
 * Use the Vagrant SHELL provisioner to configure the guest machine
