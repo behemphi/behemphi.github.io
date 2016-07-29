@@ -25,7 +25,7 @@ This series of articles was written to support the development efforts of [Kasas
 1. [Hello Vagrant!](/vagrant/chef/development%20environment/2016/06/25/delightful-local-development-environments-with-chef-and-vagrant-part-1.html) 
 1. **[Provisioner Basics](/vagrant/chef/development%20environment/2016/07/17/delightful-local-development-environments-with-chef-and-vagrant-part-2.html)**
 1. [ChefDK and the Chef Provisioner](/vagrant/chef/development%20environment/2016/07/24/delightful-local-development-environments-with-chef-and-vagrant-part-3.html)
-1. [Launching EC2 Instances with Knife]()
+1. [Launching EC2 Instances with Knife](/vagrant/chef/development%20environment/2016/07/28/delightful-local-development-environments-with-chef-and-vagrant-part-4.html)
 1. [Berkshelf and Cookbook Authoring]()
 1. [Using Community Cookbooks]() 
 1. [Testing Infrastrucutre with Test Kitchen]()
