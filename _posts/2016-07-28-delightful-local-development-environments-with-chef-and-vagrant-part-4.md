@@ -227,4 +227,20 @@ First let's decompose it:
 
 As you can see, many of these settings are specific to your AWS environment.  So take your time, play around and troubleshoot.  
 
+# Wrapping Up
+
+You created your first Hosted Chef account and organization. This will allow you to begin to realize the power of Chef beyond just configuring a single node in your infrastructure.
+
+You then configure the CLI tool `knife` so that it can talk to the Hosted Chef server.  You performed a simple query of objects in the Chef Server.
+
+Next you installed the `knife-ec2` plugin so that we could directly manipulate both our Chef Server and our EC2 environment at the same time.  
+
+You then launched an EC2 instance with knife.  
+
+# Looking Forward
+
+In the next article we will author a simple cookbook and promote it to the Chef Server.  We will then launch a Chef configured EC2 instance while learning more about the various artifacts that make up the Chef ecosystem.
+
+
+
 
