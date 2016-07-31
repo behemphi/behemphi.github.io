@@ -27,7 +27,8 @@ This series of articles was written to support the development efforts of [Kasas
 1. [Provisioner Basics](/vagrant/chef/development%20environment/2016/07/17/delightful-local-development-environments-with-chef-and-vagrant-part-2.html)
 1. [ChefDK and the Chef Provisioner](/vagrant/chef/development%20environment/2016/07/24/delightful-local-development-environments-with-chef-and-vagrant-part-3.html)
 1. **[Launching EC2 Instances with Knife](/vagrant/chef/development%20environment/2016/07/28/delightful-local-development-environments-with-chef-and-vagrant-part-4.html)**
-1. [Using Community Cookbooks]() 
+1. [Cookbook Authoring](/vagrant/chef/development%20environment/2016/07/30/delightful-local-development-environments-with-chef-and-vagrant-part-4.html) 
+1. [Using Community Cookbooks and Berkshelf]()
 1. [Testing Infrastrucutre with Test Kitchen]()
 1. [Team Coding with Chef]()
 1. [Multiple Guests with Vagrant]()
@@ -200,7 +201,8 @@ Consider but do not try to run the command:
 behemphi:~ 22:01:32 > knife ec2 server create \
   --node-name first-node \
   --image ami-4403ea24 \
-  --security-group-ids sg-e57b2482 \
+  --subnet  subnet-5868b72e\
+  --security-group-ids sg-31673857 \
   --ssh-key sandbox-sysops-boyd.hemphill \
   --region us-west-2 \
   --flavor t2.small
@@ -220,12 +222,16 @@ First let's decompose it:
 
 * `--node-name` - This is the name of the node as Chef will recognize it. It will also be the instance name in EC2.
 * `--image` - The AMI to launch as a node.  It is important to be sure the image is availabe in the region (below) or you will get an error.
+* `--subnet` - The ID of the subnet containing the security group specified below.
 * `--security-group-ids` - The security group to launch the image into. This cannot be changed after launch. So, be sure you can reach the host from where you would like to test the connection.  You will have to use your own security group. The one in the command above is account specific.
 * `--ssh-key` - The key pair name. You can find this information in the AWS EC2 console by clicking "Key Pairs" under Network & Security, and choosing the name of the pair you have access to.
 * `--region` - The region (us-west) and the availability zone (2) you would like to launch the instance in.
 * `--flavor` - The flavor of the instance. 
 
 As you can see, many of these settings are specific to your AWS environment.  So take your time, play around and troubleshoot.  
+
+
+
 
 # Wrapping Up
 
