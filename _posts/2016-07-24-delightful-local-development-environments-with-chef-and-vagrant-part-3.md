@@ -14,11 +14,9 @@ tags:
 title:  "Delightful Local Development Environments with Chef and Vagrant - Part 3"
 ---
 
-This is the second post in a series of article describing how to set up a local development environment for a simple microservice architecture using Vagrant and Chef.
-
-The goal of the series is to have a fully functional development environment with a basic understanding of the concepts of virtualization and configuration management .  
-
 This series of articles was written to support the development efforts of [Kasasa LTD](https://kasasa.com) in Austin, TX.  Though your tech stack may differ, you should be able to used this series as a way to set up your own teams' development environment in your organization.
+
+The goal of the series is to have a fully functional development environment with a basic understanding of the concepts of virtualization and configuration management with Chef . 
 
 # Table of Contents
 
@@ -27,7 +25,7 @@ This series of articles was written to support the development efforts of [Kasas
 1. **[ChefDK and the Chef Provisioner](/vagrant/chef/development%20environment/2016/07/24/delightful-local-development-environments-with-chef-and-vagrant-part-3.html)**
 1. [Launching EC2 Instances with Knife](/vagrant/chef/development%20environment/2016/07/28/delightful-local-development-environments-with-chef-and-vagrant-part-4.html)
 1. [Cookbook Authoring](/vagrant/chef/development%20environment/2016/07/30/delightful-local-development-environments-with-chef-and-vagrant-part-4.html)
-1. [Using Community Cookbooks and Berkshelf]()
+1. [Using Community Cookbooks and Berkshelf](/vagrant/chef/development%20environment/2016/08/01/delightful-local-development-environments-with-chef-and-vagrant-part-6.html)
 1. [Testing Infrastrucutre with Test Kitchen]()
 1. [Team Coding with Chef]()
 1. [Multiple Guests with Vagrant]()
