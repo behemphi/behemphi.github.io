@@ -143,7 +143,7 @@ Since the default recipe contains no code, nothing happens.
 
 **--**
 
-### An Opinionated Use of the the `default` recipe
+### An Opinionated Use of the `default` Recipe
 
 When a cookbook runs, the default recipe is always executed unless this behavior is explicitly changed. With this in mind going forward, we will used the `default` recipe to simply provide a list of other recipes in the cookbook to call and the order in which to call them.
 
@@ -220,7 +220,7 @@ As we did with packages lets create a file for this recipe:
 behemphi:~/cookbooks/sys_base 13:17:36 > touch ~/cookbooks/sys_base/recipes/groups.rb
 ```
 
-Our goal is to invite developers on to the production systems in a controlled way. This allows them to take on more responsibility for Level 1 incidents.  Developers who much wake up when systems go awry are much more likely to author systems that do not go awry.
+Our goal is to invite developers on to the production systems in a controlled way. This allows them to take on more responsibility for Level 1 incidents.  Developers who must wake up when systems go awry are much more likely to author systems that do not go awry.
 
 {% highlight ruby %}
 # groups.rb
@@ -292,7 +292,7 @@ Wouldn't it be great if there was a way to write some simple statements to do th
 
 ## Configuring `sshd` 
 
-We are going to dive a bit deeper in configuring `sshd` by manipulating a template for its configuration and using attributes to fill in template values. This is somewhat contrived to show you these important features of a cookbook, so do not reason from this as you can with the use of the default recipe.
+We are going to dive a bit deeper in configuring `sshd` by manipulating a template for its configuration and using attributes to fill in template values. This is somewhat contrived to show you these important features of a cookbook. Good practices will be explicitly called out. If something is not explicitly mentioned,  do not reason from it.
 
 ### Scaffolding
 
@@ -468,7 +468,7 @@ Long and wasteful are the discussions for a well ordered configuration file.  In
 
 ### Deconstructing the Recipe
 
-The first two statements initialize and identifier called "allowed_users" and assign it the value from our attribute. We ensure that the user `vagrant` is always on the list of `allow_users` so local development is not interrupted. 
+The first two statements initialize an identifier called "allowed_users" and assign it the value from our attribute. We ensure that the user `vagrant` is always on the list of `allow_users` so local development is not interrupted. 
 
 For the template resource the group, owner and mode are the typical Linux file permissions. 
 
