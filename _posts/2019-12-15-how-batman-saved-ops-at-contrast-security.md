@@ -1,3 +1,18 @@
+---
+categories: 
+- Teams
+- Unplanned Work
+- Process
+date: 2019-12-15
+layout: post
+tags: 
+- batman
+- devsecops days
+- Contrast Security
+- DevOps
+title:  "How Batman Saved Ops at Contrast Security"
+---
+
 The role of "batman" (our Slack handle) is to serve as the primary external interface to other teams for interrupt work. 
 The batman handle rotates with the on-call person each week at this time. 
 
